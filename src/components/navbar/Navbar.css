@@ -1,0 +1,48 @@
+.navbar-brand {
+    font-family: heading;
+    font-size: 25px !important;
+    color: black;
+    padding: 0px !important;
+    word-wrap: break-word;
+}
+
+.navbar-brand:hover {
+    color: #F7AC1D;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 20px 0px;
+    margin: 0px 0px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.85;
+    font-family: "Inter", sans-serif;
+    letter-spacing:0.1ch;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #F7AC1D;
+    /* color: aqua; */
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #F7AC1D;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}

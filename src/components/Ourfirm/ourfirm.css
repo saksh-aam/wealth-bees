@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #474747;
+    color: #fff;
+    transition: all 0.3s;
+    padding-top:30px;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #474747;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar-heading{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+.side-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.side-links:hover .arrow{
+    display: block;
+}
+.arrow{
+    display: none;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    padding-top: 50px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        /* margin-left: -250px; */
+    }
+
+    #sidebar.active {
+        margin-left: 250px;
+    }
+
+    #sidebarCollapse span {
+        display: block;
+    }
+}

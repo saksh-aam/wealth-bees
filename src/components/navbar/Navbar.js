@@ -18,20 +18,20 @@ function NavBar() {
               </div>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-4 lg:space-x-8 text-[10px] lg:text-[14px]">
-                  <a href="/" className="nav-link nav-link-ltr ">
+                  <Link to="/" className="nav-link nav-link-ltr ">
                     Capabilites
-                  </a>
-                  <a href="/#" className="nav-link nav-link-ltr ">
+                  </Link>
+                  <Link to="/ourfirm" className="nav-link nav-link-ltr ">
                     Our Firm
-                  </a>
+                  </Link>
 
-                  <a href="/#" className="nav-link nav-link-ltr">
+                  <Link to="/#" className="nav-link nav-link-ltr">
                     People
-                  </a>
+                  </Link>
 
-                  <a href="/#" className="nav-link nav-link-ltr ">
+                  <Link to="/#" className="nav-link nav-link-ltr ">
                     Investors
-                  </a>
+                  </Link>
 
                   {/* <a
                     href="#"
@@ -43,7 +43,7 @@ function NavBar() {
               </div>
               <div>
                 <a
-                  href="https://dare2compete.com/festival/e-summit22-making-impossible-inevitable-indian-institute-of-information-technology-pune-21495"
+                  href="/"
                                   target="_blank"
                                   rel="noreferrer"
                   type="submit"
@@ -115,33 +115,33 @@ function NavBar() {
               id="mobile-menu"
             >
               <div className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="font-Inter font-bold block px-3 py-2 rounded-md text-base"
                 >
                   Capabilities
-                </a>
+                </Link>
 
-                <a
-                  href="/"
+                <Link
+                  to="/ourfirm"
                   className="font-Montserrat hover: block px-3 py-2 rounded-md text-base font-bold"
                 >
                   Our Firm
-                </a>
+                </Link>
 
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="font-Montserrat font-bold hover: block px-3 py-2 rounded-md text-base "
                 >
                   People
-                </a>
+                </Link>
 
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="font-Montserrat font-bold   hover: block px-3 py-2 rounded-md text-base "
                 >
                   Investors
-                </a>
+                </Link>
               </div>
             </div>
           )}

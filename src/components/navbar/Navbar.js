@@ -18,7 +18,7 @@ function NavBar() {
               </div>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-4 lg:space-x-8 text-[10px] lg:text-[14px]">
-                  <Link to="/" className="nav-link nav-link-ltr ">
+                  <Link to="/our-capabilities" className="nav-link nav-link-ltr ">
                     Capabilites
                   </Link>
                   <Link to="/ourfirm" className="nav-link nav-link-ltr ">

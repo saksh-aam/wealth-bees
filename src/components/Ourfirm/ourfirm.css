@@ -107,11 +107,8 @@ p {
 
 @media (max-width: 768px) {
     #sidebar {
-        /* margin-left: -250px; */
-    }
-
-    #sidebar.active {
-        margin-left: 250px;
+        max-width: 175px;
+        min-width: 175px;
     }
 
     #sidebarCollapse span {

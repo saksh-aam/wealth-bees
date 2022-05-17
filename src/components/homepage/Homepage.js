@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./homepage.css";
 
 const Homepage = () => {
-  return (
-      <div className='homeMain'>
-          
-    </div>
-  )
-}
+  return <div className="home-main"></div>;
+};
 
-export default Homepage 
+export default Homepage;

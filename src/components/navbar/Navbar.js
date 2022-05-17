@@ -29,7 +29,7 @@ function NavBar() {
                     People
                   </Link>
 
-                  <Link to="/#" className="nav-link nav-link-ltr ">
+                  <Link to="/investor-overview" className="nav-link nav-link-ltr ">
                     Investors
                   </Link>
 

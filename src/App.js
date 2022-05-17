@@ -11,18 +11,21 @@ import Insurance from "./components/Capabilities/Insurance";
 import EstatePlanning from "./components/Capabilities/EstatePlanning";
 import Loan from "./components/Capabilities/Loan";
 import FinancialPlanning from "./components/Capabilities/FinancialPlanning";
+import InvestorsOverview from "./components/Investor/InvestorsOverview";
+import Homepage from "./components/Homepage/Homepage";
 
 function App() {
   return (
     <div className="App">
       <Router>
-          {/* <NavBar /> */}
+        {/* <NavBar /> */}
         <Routes>
           <Route
             path="/"
             element={
               <div className="">
                 <NavBar />
+                <Homepage />
               </div>
             }
           />
@@ -30,26 +33,44 @@ function App() {
           <Route
             path="/ourfirm/*"
             element={
-              <div style={{ display: 'flex', flexDirection:"column" }}>
-                <NavBar/>
-                <div className="pt-0 py-9 px-4 w-fit sm:w-full"></div><OurFirm /><div/>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div>
+                  <NavBar />
                 </div>
+                <div className="w-fit sm:w-full">
+                  <OurFirm />
+                </div>
+              </div>
             }
-            children={[ Ideals, Growth]}
+            children={[Ideals, Growth]}
           />
 
           <Route
             path="/our-capabilities/*"
             element={
-              <div style={{ display: 'flex', flexDirection:"column" }}>
-                <NavBar/>
-                <div className=" px-4 w-fit sm:w-full"></div><OurCapabilities /><div/>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div>
+                  <NavBar />
                 </div>
+                <div className="w-fit sm:w-full" style={{ flex: "1" }}>
+                  <OurCapabilities />
+                </div>
+              </div>
             }
-            children={[ Taxation, WealthManagement, Insurance, EstatePlanning, Loan, FinancialPlanning]}
+            children={[
+              Taxation,
+              WealthManagement,
+              Insurance,
+              EstatePlanning,
+              Loan,
+              FinancialPlanning,
+            ]}
           />
-
-          
+          <Route
+            path="/investor-overview"
+            exact
+            element={<InvestorsOverview />}
+          />
         </Routes>
       </Router>
     </div>

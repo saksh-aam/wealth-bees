@@ -25,7 +25,9 @@ function App() {
             element={
               <div className="">
                 <NavBar />
-                <Homepage />
+                <div className="w-fit sm:w-full">
+                  <Homepage />
+                </div>
               </div>
             }
           />
@@ -33,7 +35,7 @@ function App() {
           <Route
             path="/ourfirm/*"
             element={
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <div>
                 <div>
                   <NavBar />
                 </div>
@@ -48,11 +50,11 @@ function App() {
           <Route
             path="/our-capabilities/*"
             element={
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <div>
                 <div>
                   <NavBar />
                 </div>
-                <div className="w-fit sm:w-full" style={{ flex: "1" }}>
+                <div className="w-fit sm:w-full">
                   <OurCapabilities />
                 </div>
               </div>

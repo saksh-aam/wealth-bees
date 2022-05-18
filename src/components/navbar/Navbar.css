@@ -1,6 +1,7 @@
 .mainNavbar{
-    background-color: transparent;
+    background-color: grey;
     height:10vh;
+    width:100vw;
 }
 .navbar-brand {
     font-family: heading;

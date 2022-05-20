@@ -10,7 +10,7 @@
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
-}
+} */
 
 .navbar {
     padding: 15px 10px;
@@ -18,14 +18,14 @@
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
-} */
+}
 
 /* .line {
     width: 100%;
@@ -38,10 +38,14 @@
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
+.ourfirm-main{
+z-index: 1;
+}
 .wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
+    z-index: 1;
 }
 
 #sidebar {
@@ -50,7 +54,8 @@
     background: #474747;
     color: #fff;
     transition: all 0.3s;
-    padding-top:30px;
+    /* margin-top: 9vh; */
+    /* padding-top:30px; */
 }
 
 #sidebar.active {
@@ -74,19 +79,48 @@
 #sidebar ul li {
     padding: 10px;
     font-size: 1.1em;
-    display: block;
+    /* display: block; */
 }
 .side-links{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 10px;
+    
 }
 
-.side-links:hover .arrow{
-    display: block;
+.side-links:hover .arrow {
+    animation: moveWithVisibility 1s;
+}
+.side-links:hover .sidelink-val {
+    animation:  move 1s;
 }
 .arrow{
-    display: none;
+    visibility: hidden;
+        opacity: 0;
+    
+}
+@keyframes move{
+    from {
+            transform: translateX(0px);
+        }
+    
+        to {
+            transform: translateX(20px);
+        }
+}
+@keyframes moveWithVisibility{
+    from {
+        transform: translateX(0px);
+        visibility: hidden;
+                    opacity: 0;
+        }
+    
+        to {
+            transform: translateX(20px);
+            visibility: visible;
+                opacity: 1;
+        }
 }
 
 
@@ -97,9 +131,9 @@
 #content {
     width: 100%;
     padding: 20px;
-    padding-top: 50px;
     min-height: 100vh;
     transition: all 0.3s;
+    /* margin-top: 10vh; */
 }
 
 /* ---------------------------------------------------

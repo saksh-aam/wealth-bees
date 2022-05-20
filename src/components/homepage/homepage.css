@@ -8,7 +8,7 @@
 
 .sections {
   overflow: hidden;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   position: relative;
 }
@@ -22,21 +22,19 @@
 }
 
 #section1-inner {
-  margin-top: 10vh;
   background-color: #f7ac1d;
   position: relative;
-  height: 90vh;
+  height: 95vh;
   background-image: url("../../images/main.png");
   background-position: center;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #home-main-heading {
   font-family: "Montserrat";
   /* width: 90%; */
-
   height: 45vh;
   position: absolute;
   font-weight: 700;
@@ -76,24 +74,36 @@
 .subheading-home {
   text-align: right;
   font-size: 50px;
-  position: absolute;
-  margin-top: 5%;
-  right: 10%;
+  /* position: absolute; */
+  /* margin-top: 0%; */
+  /* right: 10%; */
+  padding-bottom: 2%;
   color: rgba(174, 114, 0, 1);
 }
 
-.section23-inner {
+.section2-inner {
   overflow: hidden;
-  background-color: #1dbdf7;
+  /* background-color: #1dbdf7; */
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10vh; */
+  margin: 5% 10%;
+}
+.section3-inner {
+  overflow: hidden;
+  /* background-color: #1dbdf7; */
   display: flex;
   flex-direction: row;
   /* margin-top: 10vh; */
-  margin: 10%;
 }
-
-.section23-content {
-  width: 100%;
+.section-2main{
+  display: flex;
+  flex-direction: row;
+}
+.section2-content {
+  width: 80%;
   height: 100%;
+  padding-right:5%
 }
 
 .section23-image {
@@ -102,14 +112,21 @@
   display: flex;
   justify-content: center;
 }
+.section3-image {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
 
 #rupee{
     text-shadow: black 0px 12px 5px;
-    font-size: 53vh;
-    top: 0%;
+    font-size: 60vh;
+    /* padding-top: 0%; */
+    line-height: 100%;
 }
 .section3-content {
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -118,6 +135,7 @@
 }
 .subheading3 {
   font-size: 50px;
+  padding: 5% 0 2.5% 0;
   color: rgba(174, 114, 0, 1);
 }
 
@@ -199,6 +217,7 @@ align-items: center;
 }
 #box4-2 {
   padding: 5%;
+  padding-top: 0%;
 }
 #content4-2 {
   text-align: left;

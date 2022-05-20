@@ -21,7 +21,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/">Presence</Link>
+                <Link to="/ourfirm/" className="sidelink-val">
+                  Presence
+                </Link>
               </div>
             </li>
             <li>
@@ -29,7 +31,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Ideals">Ideals</Link>
+                <Link to="/ourfirm/Ideals" className="sidelink-val">
+                  Ideals
+                </Link>
               </div>
             </li>
             <li>
@@ -37,7 +41,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Growth">Growth</Link>
+                <Link to="/ourfirm/Growth" className="sidelink-val">
+                  Growth
+                </Link>
               </div>
             </li>
             <li>
@@ -45,7 +51,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Past">Past</Link>
+                <Link to="/ourfirm/Past" className="sidelink-val">
+                  Past
+                </Link>
               </div>
             </li>
             <li>
@@ -53,7 +61,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Impact">Impact on Society</Link>
+                <Link to="/ourfirm/Impact" className="sidelink-val">
+                  Impact on Society
+                </Link>
               </div>
             </li>
             <li>
@@ -61,7 +71,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Past">Contact</Link>
+                <Link to="/ourfirm/Past" className="sidelink-val">
+                  Contact
+                </Link>
               </div>
             </li>
           </ul>

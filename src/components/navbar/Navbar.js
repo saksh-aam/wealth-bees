@@ -2,34 +2,40 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
+import logo from "../../images/logo.png";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="absolute w-full z-10">
-      <nav className="mainNavbar">
+    <div className="absolute w-full z-10 shadow-md sticky">
+      <nav className="">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between ">
             <div className="w-full flex items-center justify-between">
               <div className="">
                 <Link to="/" className="navbar-brand">
-                  Wealth Bees
+                  <img src={logo} alt="" id="wealthbeesLogo" />
                 </Link>
               </div>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-4 lg:space-x-8 text-[10px] lg:text-[14px]">
-                  <Link to="/our-capabilities" className="nav-link nav-link-ltr ">
+                  <Link
+                    to="/our-capabilities"
+                    className="nav-link nav-link-ltr "
+                  >
                     Capabilites
                   </Link>
-                  <Link to="/ourfirm" className="nav-link nav-link-ltr ">
+                  <Link to="/our-firm" className="nav-link nav-link-ltr ">
                     Our Firm
                   </Link>
 
-                  <Link to="/#" className="nav-link nav-link-ltr">
+                  <Link to="/people" className="nav-link nav-link-ltr">
                     People
                   </Link>
 
-                  <Link to="/investor-overview" className="nav-link nav-link-ltr ">
+                  <Link
+                    to="/investor-overview"
+                    className="nav-link nav-link-ltr "
+                  >
                     Investors
                   </Link>
 
@@ -42,18 +48,19 @@ function NavBar() {
                 </div>
               </div>
               <div>
-                <a
+                <Link
+                  to=""
                   href="/"
-                                  target="_blank"
-                                  rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   type="submit"
                   className="text-black border-2 hover:bg-white border-customYellow hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-xs sm:text-sm transition duration-150 ease-in-out"
                 >
-                  REGISTER NOW
-                </a>
+                  Login
+                </Link>
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -116,7 +123,7 @@ function NavBar() {
             >
               <div className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
-                  to="/"
+                  to="/our-capabilities"
                   className="font-Inter font-bold block px-3 py-2 rounded-md text-base"
                 >
                   Capabilities
@@ -130,14 +137,14 @@ function NavBar() {
                 </Link>
 
                 <Link
-                  to="/"
+                  to="/people"
                   className="font-Montserrat font-bold hover: block px-3 py-2 rounded-md text-base "
                 >
                   People
                 </Link>
 
                 <Link
-                  to="/"
+                  to="/investor-overview"
                   className="font-Montserrat font-bold   hover: block px-3 py-2 rounded-md text-base "
                 >
                   Investors
@@ -146,7 +153,7 @@ function NavBar() {
             </div>
           )}
         </Transition>
-          </nav>
+      </nav>
     </div>
   );
 }

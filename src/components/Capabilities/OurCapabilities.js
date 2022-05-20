@@ -7,7 +7,7 @@ import Loan from "./Loan";
 import "./ourcapabilities.css";
 import Taxation from "./Taxation";
 import WealthManagement from "./WealthManagement";
-import capabilities from "../../images/capabilities.jpg";
+import capabilities from "../../images/capabilities.png";
 const OurCapabilities = () => {
   return (
     <div className="capabilities-main">

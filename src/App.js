@@ -13,18 +13,19 @@ import Loan from "./components/Capabilities/Loan";
 import FinancialPlanning from "./components/Capabilities/FinancialPlanning";
 import InvestorsOverview from "./components/Investor/InvestorsOverview";
 import Homepage from "./components/Homepage/Homepage";
+import People from "./components/People/People";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <NavBar /> */}
+        <NavBar />
         <Routes>
           <Route
             path="/"
             element={
               <div className="">
-                <NavBar />
+                {/* <NavBar /> */}
                 <div className="w-fit sm:w-full">
                   <Homepage />
                 </div>
@@ -33,12 +34,10 @@ function App() {
           />
 
           <Route
-            path="/ourfirm/*"
+            path="/our-firm/*"
             element={
               <div>
-                <div>
-                  <NavBar />
-                </div>
+                <div>{/* <NavBar /> */}</div>
                 <div className="w-fit sm:w-full">
                   <OurFirm />
                 </div>
@@ -51,9 +50,7 @@ function App() {
             path="/our-capabilities/*"
             element={
               <div>
-                <div>
-                  <NavBar />
-                </div>
+                <div>{/* <NavBar /> */}</div>
                 <div className="w-fit sm:w-full">
                   <OurCapabilities />
                 </div>
@@ -71,7 +68,20 @@ function App() {
           <Route
             path="/investor-overview"
             exact
-            element={<InvestorsOverview />}
+            element={
+              <div className="w-fit sm:w-full">
+                <InvestorsOverview />
+              </div>
+            }
+          />
+          <Route
+            path="/people"
+            exact
+            element={
+              <div className="w-fit sm:w-full">
+                <People />
+              </div>
+            }
           />
         </Routes>
       </Router>

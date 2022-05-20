@@ -2,7 +2,11 @@
     background-color: grey;
     height:10vh;
     width:100vw;
+    /* z-index: ; */
+    /* position: relative; */
+    /* margin-top:0%; */
 }
+
 .navbar-brand {
     font-family: heading;
     font-size: 25px !important;
@@ -20,8 +24,8 @@
     font-size: 18px;
     text-decoration: none;
     color: black;
-    padding: 20px 0px;
-    margin: 0px 0px;
+    /* padding: 20px 0px; */
+    /* margin: 0px 0px; */
     display: inline-block;
     position: relative;
     opacity: 0.85;
@@ -37,7 +41,7 @@
 
 .nav-link::before {
     transition: 300ms;
-    height: 3px;
+    height: 4px;
     content: "";
     position: absolute;
     background-color: #F7AC1D;
@@ -45,7 +49,7 @@
 
 .nav-link-ltr::before {
     width: 0%;
-    bottom: 10px;
+    bottom: -5px;
 }
 
 .nav-link-ltr:hover::before {

@@ -1,6 +1,6 @@
 import React from "react";
 import insight1 from "../../images/insights.png";
-import rupee from "../../images/rupee.png";
+import main from "../../images/main.png";
 import HT1 from "../../images/HT1.png";
 import HT2 from "../../images/HT2.png";
 import HT3 from "../../images/HT3.png";
@@ -10,6 +10,7 @@ const Homepage = () => {
   return (
     <div className="home-main">
       <div id="section-1" className="sections">
+        {/* <img src={main} alt="" id="mainImg" /> */}
         <div id="section1-inner">
           <div id="home-main-heading">
             <span id="first">Investing in</span>
@@ -21,34 +22,37 @@ const Homepage = () => {
         </div>
       </div>
       <div id="section-2" className="sections">
-        <h1 className="subheading-home">Insights</h1>
-        <div className="section23-inner">
-          <div className="section23-content">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </div>
-          <div className="section23-image">
-            <img src={insight1} alt="" />
+        <div className="section2-inner">
+          <h1 className="subheading-home">Insights</h1>
+          <div className="section-2main">
+            <div className="section2-content">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </div>
+            <div className="section23-image">
+              <img src={insight1} alt="" />
+            </div>
           </div>
         </div>
       </div>
       <div id="section-3" className="sections">
-        <div className="section23-inner">
-          <div className="section23-image" id="rupee">
+        <div className="section3-inner">
+          <div className="section3-image" id="rupee">
             {/* <img src={rupee} alt="" /> */}₹
           </div>
           <div className="section3-content">
             <div>
               <h1 className="subheading3">WealthBees</h1>
             </div>
-            <div className="section23-content">
+            <div className="section3-content">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy
               textever since the 1500s, when an unknown printer took a galley of

@@ -5,6 +5,8 @@ import Presence from "./Presence";
 import Ideals from "./Ideals";
 import Growth from "./Growth";
 import "./ourfirm.css";
+import Impact from "./Impact";
+import { BsLayoutSidebarInset } from "react-icons/bs";
 const OurFirm = () => {
   const [flag, setflag] = useState(true);
   return (
@@ -21,7 +23,7 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/" className="sidelink-val">
+                <Link to="/our-firm/" className="sidelink-val">
                   Presence
                 </Link>
               </div>
@@ -31,7 +33,7 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Ideals" className="sidelink-val">
+                <Link to="/our-firm/Ideals" className="sidelink-val">
                   Ideals
                 </Link>
               </div>
@@ -41,7 +43,7 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Growth" className="sidelink-val">
+                <Link to="/our-firm/Growth" className="sidelink-val">
                   Growth
                 </Link>
               </div>
@@ -51,7 +53,7 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Past" className="sidelink-val">
+                <Link to="/our-firm/Past" className="sidelink-val">
                   Past
                 </Link>
               </div>
@@ -61,7 +63,7 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Impact" className="sidelink-val">
+                <Link to="/our-firm/Impact" className="sidelink-val">
                   Impact on Society
                 </Link>
               </div>
@@ -71,7 +73,7 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/ourfirm/Past" className="sidelink-val">
+                <Link to="/our-firm/Past" className="sidelink-val">
                   Contact
                 </Link>
               </div>
@@ -80,27 +82,39 @@ const OurFirm = () => {
         </nav>
 
         <div id="content">
-          <nav className="navbar navbar-expand-lg navbar-light bg-light toggle-btn">
-            <div className="container-fluid">
-              <button
-                type="button"
-                id="sidebarCollapse"
-                className="btn btn-info bg-light w-full"
-                onClick={() => {
-                  setflag(!flag);
-                }}
-              >
-                <span>Toggle Sidebar</span>
-              </button>
+          <div id="upper-ourfirm-div">
+            <div id="inner-div">
+              <nav className="navbar navbar-expand-lg navbar-light bg-light toggle-btn">
+                <div className="container-fluid">
+                  <button
+                    type="button"
+                    id="sidebarCollapse"
+                    className="btn btn-info bg-light "
+                    onClick={() => {
+                      setflag(!flag);
+                    }}
+                  >
+                    <BsLayoutSidebarInset size={25} />
+                    {/* <span>Toggle Sidebar</span> */}
+                  </button>
+                </div>
+              </nav>
             </div>
-          </nav>
-
-          <div>
-            <Routes>
-              <Route path="/" exact element={<Presence />} />
-              <Route path="/Growth" exact element={<Growth />} />
-              <Route path="/Ideals" exact element={<Ideals />} />
-            </Routes>
+            <div id="ourfirm-heading">
+              <p className="ourfirm-heading-p">It's not about BUSINESS.</p>
+              <p className="ourfirm-heading-p">It's about TRUST.</p>
+              {/* </div> */}
+            </div>
+          </div>
+          <div id="ourfirm-routes">
+            <div id="ourfirm-routes-content">
+              <Routes>
+                <Route path="/" exact element={<Presence />} />
+                <Route path="/Growth" exact element={<Growth />} />
+                <Route path="/Ideals" exact element={<Ideals />} />
+                <Route path="/Impact" exact element={<Impact />} />
+              </Routes>
+            </div>
           </div>
         </div>
       </div>

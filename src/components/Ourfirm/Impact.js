@@ -1,9 +1,9 @@
 import React from "react";
 
-const Ideals = () => {
+const Impact = () => {
   return (
     <div>
-      <h1 className="ourfirm-subheading">Ideals</h1>
+      <h1 className="ourfirm-subheading">Impact on Society</h1>
       <p className="ourfirm-sub-content-p">
         Our participation in the financial sector gives us an opportunity to
         impact the society positively. WealthBees has been successfully
@@ -24,4 +24,4 @@ const Ideals = () => {
   );
 };
 
-export default Ideals;
+export default Impact;

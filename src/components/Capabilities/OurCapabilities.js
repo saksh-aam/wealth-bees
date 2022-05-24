@@ -17,47 +17,65 @@ const OurCapabilities = () => {
         <div id="capabilities-heading">Our Capabilities</div>
         {/* </div> */}
       </div>
-      <div className="slider">
-        <div className="slider-links">
-          <Link to="/our-capabilities/">
-            <div className="icon">A</div>
-            <div className="txt">Financial Planning</div>
-          </Link>
-          <Link to="/our-capabilities/Taxation">
-            <div className="icon">Y</div>
-            <div className="txt">Taxation</div>
-          </Link>
-          <Link to="/our-capabilities/Estate-Planning">
-            <div className="icon">$</div>
-            <div className="txt">Estate Planning</div>
-          </Link>
-          <Link to="/our-capabilities/Wealth-Management">
-            <div className="icon">&#38;</div>
-            <div className="txt">Wealth Management</div>
-          </Link>
-          <Link to="/our-capabilities/Loan">
-            <div className="icon">8</div>
-            <div className="txt">Loan</div>
-          </Link>
-          <Link to="/our-capabilities/Insurance">
-            <div className="icon">D</div>
-            <div className="txt">Insurance</div>
-          </Link>
-        </div>
+      <div className="slider-parent">
+        <div className="slider">
+          <div className="slider-links">
+            <Link to="/our-capabilities/">
+              <div className="icon">A</div>
+              <div className="txt">
+                <p className="link-txt" >Financial</p>
+                <p className="link-txt" > Planning</p>
+              </div>
+            </Link>
+            <Link to="/our-capabilities/Taxation">
+              <div className="icon">Y</div>
+              <div className="txt"><p className="link-txt" >Taxation</p></div>
+            </Link>
+            <Link to="/our-capabilities/Estate-Planning">
+              <div className="icon">$</div>
+              <div className="txt">
+                <p className="link-txt" >Financial</p>
+                <p className="link-txt" >Planning</p>
+              </div>
+            </Link>
+            <Link to="/our-capabilities/Wealth-Management">
+              <div className="icon">&#38;</div>
+              <p className="link-txt" >Wealth</p>
+              <p className="link-txt" >Management</p>
+              <div className="txt"></div>
+            </Link>
+            <Link to="/our-capabilities/Loan">
+              <div className="icon">8</div>
+              <div className="txt">
+                <p className="link-txt" >Loan</p>
+              </div>
+            </Link>
+            <Link to="/our-capabilities/Insurance">
+              <div className="icon">D</div>
+              <div className="txt">
+                <p className="link-txt" >Insurance</p>
+              </div>
+            </Link>
+          </div>
 
-        <div id="sub-capabilities">
-          <Routes>
-            <Route path="/" exact element={<FinancialPlanning />} />
-            <Route path="/Loan" exact element={<Loan />} />
-            <Route path="/Insurance" exact element={<Insurance />} />
-            <Route path="/Estate-Planning" exact element={<EstatePlanning />} />
-            <Route path="/Taxation" exact element={<Taxation />} />
-            <Route
-              path="/Wealth-Management"
-              exact
-              element={<WealthManagement />}
-            />
-          </Routes>
+          <div id="sub-capabilities">
+            <Routes>
+              <Route path="/" exact element={<FinancialPlanning />} />
+              <Route path="/Loan" exact element={<Loan />} />
+              <Route path="/Insurance" exact element={<Insurance />} />
+              <Route
+                path="/Estate-Planning"
+                exact
+                element={<EstatePlanning />}
+              />
+              <Route path="/Taxation" exact element={<Taxation />} />
+              <Route
+                path="/Wealth-Management"
+                exact
+                element={<WealthManagement />}
+              />
+            </Routes>
+          </div>
         </div>
       </div>
     </div>

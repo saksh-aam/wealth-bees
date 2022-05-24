@@ -4,7 +4,7 @@
 }
 #upper-capabilities-div {
   width: 100vw;
-  height: 40vh;
+  height: fit-content;
   text-align: center;
   position: relative;
   background-color: black;
@@ -17,7 +17,7 @@
   margin: auto 0;
   width: 100%;
   bottom: 40%;
-  font-size: xx-large;
+  font-size: 4.25rem;
   font-weight: 600;
   color: white;
 }
@@ -27,11 +27,15 @@
   height: 100%;
   opacity: 0.7;
 }
-
+.slider-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .slider {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 80vw;
   text-align: center;
   min-height: fit-content;
   /* background: #E7E7E7; */
@@ -39,15 +43,15 @@
 }
 
 #sub-capabilities {
-  padding: 5vh;
+  padding: 5% 8%;
   height: fit-content;
 }
 
 .secondary-div {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin-left: 5%;
+  width: 100%;
+  height:fit-content;
 }
 
 hr {
@@ -60,20 +64,22 @@ hr {
 .secondary-div-heading {
   color: #f7ac1d;
   font-size: 35px;
-  text-align: left;
-  padding-bottom: 2.5%;
+  text-align: justify;
+  padding: 4% 0%;
+  line-height: 2.5ch;
+  /* padding-bottom: 4%; */
   /* font-size: 18px; */
 }
 
 .secondary-div-content{
-    padding-top: 3%;
+    padding-top: 7%;
 }
 .secondary-div-content p {
   padding: 0.5% 0%;
   font-size: 20px;
   padding-bottom: 2%;
   width: 100%;
-  text-align: left;
+  text-align: justify;
 }
 
 .icon {
@@ -89,7 +95,8 @@ hr {
   justify-content: space-around;
 }
 
-.txt {
+.link-txt {
+  font-size:1.1rem;
   font-weight: 600;
 }
 
@@ -139,13 +146,11 @@ hr {
   }
 
   #sub-capabilities {
-    padding-left: 1vh;
-    padding-right: 0%;
-    margin-left: 0%;
+    padding:0% 5%;
   }
 
-  .txt {
-    font-size: 1.5vh;
+  .link-txt {
+    font-size: 1rem;
   }
   .secondary-div-heading {
     color: #f7ac1d;
@@ -159,7 +164,7 @@ hr {
   .secondary-div-content p {
     /* padding-top: 3%; */
     padding-bottom: 5%;
-    text-align: left;
+    text-align: justify;
     font-size: 1rem;
   }
   hr {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
 import Presence from "./Presence";
-import Ideals from "./Ideals";
+import Vision from "./Vision";
 import Growth from "./Growth";
 import "./ourfirm.css";
 import Impact from "./Impact";
@@ -33,8 +33,8 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/our-firm/Ideals" className="sidelink-val">
-                  Ideals
+                <Link to="/our-firm/Vision" className="sidelink-val">
+                  Vision
                 </Link>
               </div>
             </li>
@@ -53,28 +53,8 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/our-firm/Past" className="sidelink-val">
-                  Past
-                </Link>
-              </div>
-            </li>
-            <li>
-              <div className="side-links">
-                <div className="arrow">
-                  <GoTriangleRight />
-                </div>
                 <Link to="/our-firm/Impact" className="sidelink-val">
                   Impact on Society
-                </Link>
-              </div>
-            </li>
-            <li>
-              <div className="side-links">
-                <div className="arrow">
-                  <GoTriangleRight />
-                </div>
-                <Link to="/our-firm/Past" className="sidelink-val">
-                  Contact
                 </Link>
               </div>
             </li>
@@ -110,8 +90,8 @@ const OurFirm = () => {
             <div id="ourfirm-routes-content">
               <Routes>
                 <Route path="/" exact element={<Presence />} />
+                <Route path="/Vision" exact element={<Vision />} />
                 <Route path="/Growth" exact element={<Growth />} />
-                <Route path="/Ideals" exact element={<Ideals />} />
                 <Route path="/Impact" exact element={<Impact />} />
               </Routes>
             </div>

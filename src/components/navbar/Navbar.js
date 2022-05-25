@@ -10,11 +10,11 @@ function NavBar() {
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between ">
             <div className="w-full flex items-center justify-between">
-              <div className="">
+              <div className="py-1">
                 <Link to="/" className="navbar-brand">
                   <svg
                     width="150"
-                    height="90"
+                    height="60"
                     viewBox="0 0 890 406"
                     fill="none"
                     padding="0%"
@@ -174,7 +174,7 @@ function NavBar() {
                 </Link>
 
                 <Link
-                  to="/ourfirm"
+                  to="/our-firm"
                   className="font-Montserrat hover: block px-3 py-2 rounded-md text-base font-bold"
                 >
                   Our Firm

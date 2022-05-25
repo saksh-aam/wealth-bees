@@ -1,29 +1,74 @@
-#upper-people-div {
-    width: 100vw;
-    position: relative;
-    height: fit-content;
-    text-align: center;
-    background-color: #F7AC1D;
-    z-index: 2;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-    
+.people-main {
+  width: 100vw;
+  overflow: hidden;
 }
-.person-image{
-    transform: scale(1.5,1.5);
+#upper-people-div {
+  width: 100vw;
+  position: relative;
+  height: fit-content;
+  text-align: center;
+  background-color: #f7ac1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.person-image {
+  transform: scale(1.3, 1.3);
 }
 #people-heading {
-    position: absolute;
-    font-size: 4.25rem;
-    font-weight: 600;
-    color: white;
+  position: absolute;
+  font-size: 4.25rem;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#icon {
+  position: absolute;
+  opacity: 0.8;
+  animation: moveUpDown 3s infinite;
+}
+@keyframes moveUpDown {
+  0% {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 2.5%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+.people-main-content {
+  padding: 4%;
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.people-main-content{
-    padding: 5%;
-    display: flex;
-        align-items: center;
-        justify-content: center;
+@media only screen and (max-width: 1450px) {
+  .cards-envelope {
+    flex-direction: column;
+  }
 }
-
+@media only screen and (max-width: 1100px) {
+  #people-heading {
+    font-size: 3rem;
+  }
+  #icon{
+      display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #people-heading {
+    font-size: 1.5rem;
+  }
+  #icon{
+      display: none;
+  }
+}

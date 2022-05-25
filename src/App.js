@@ -26,24 +26,18 @@ function App() {
           <Route
             path="/"
             element={
-              <div className="">
-                {/* <NavBar /> */}
                 <div className="w-fit sm:w-full">
                   <Homepage />
                 </div>
-              </div>
             }
           />
 
           <Route
             path="/our-firm/*"
             element={
-              <div>
-                <div>{/* <NavBar /> */}</div>
                 <div className="w-fit sm:w-full">
                   <OurFirm />
                 </div>
-              </div>
             }
             children={[Vision, Growth, Presence, Impact]}
           />
@@ -51,12 +45,9 @@ function App() {
           <Route
             path="/our-capabilities/*"
             element={
-              <div>
-                <div>{/* <NavBar /> */}</div>
                 <div className="w-fit sm:w-full">
                   <OurCapabilities />
                 </div>
-              </div>
             }
             children={[
               Taxation,

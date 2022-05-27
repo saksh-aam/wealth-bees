@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
 import Presence from "./Presence";
 import Vision from "./Vision";
@@ -88,12 +88,10 @@ const OurFirm = () => {
           </div>
           <div id="ourfirm-routes">
             <div id="ourfirm-routes-content">
-              <Routes>
-                <Route path="/" exact element={<Presence />} />
-                <Route path="/Vision" exact element={<Vision />} />
-                <Route path="/Growth" exact element={<Growth />} />
-                <Route path="/Impact" exact element={<Impact />} />
-              </Routes>
+                <Presence />
+                <Vision />
+                <Growth />
+                <Impact />
             </div>
           </div>
         </div>

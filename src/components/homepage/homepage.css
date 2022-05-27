@@ -34,7 +34,7 @@
 #section1-inner {
   background-color: #f7ac1d;
   position: relative;
-  height: 91.5vh;
+  height: 100vh;
 }
 
 #home-main-heading {
@@ -45,7 +45,7 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 70px;
-  top: 5%;
+  top: 10%;
   left: 2%;
   text-align: left;
 }

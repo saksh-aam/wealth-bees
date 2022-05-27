@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
 import EstatePlanning from "./EstatePlanning";
 import FinancialPlanning from "./FinancialPlanning";
 import Insurance from "./Insurance";
@@ -8,73 +7,53 @@ import "./ourcapabilities.css";
 import Taxation from "./Taxation";
 import WealthManagement from "./WealthManagement";
 import capabilities from "../../images/capabilities.png";
+import { BsLayoutSidebarInset } from "react-icons/bs";
+import Sidebar from "../Sidebar/Sidebar";
 const OurCapabilities = () => {
+  const [flag, setflag] = useState(false);
+  const list = [
+    "#Financial-Planning",
+    "#Taxation",
+    "#Wealth-Management",
+    "#Loan", "#Insurance", "#Estate-Planning",
+  ];
   return (
     <div className="capabilities-main">
-      <div id="upper-capabilities-div">
-        {/* <div id="inner-div"> */}
-        <img src={capabilities} id="capabilities-img" alt=""></img>
-        <div id="capabilities-heading">Our Capabilities</div>
-        {/* </div> */}
-      </div>
-      <div className="slider-parent">
-        <div className="slider">
-          <div className="slider-links">
-            <Link to="/our-capabilities/">
-              <div className="icon">A</div>
-              <div className="txt">
-                <p className="link-txt" >Financial</p>
-                <p className="link-txt" > Planning</p>
-              </div>
-            </Link>
-            <Link to="/our-capabilities/Taxation">
-              <div className="icon">Y</div>
-              <div className="txt"><p className="link-txt" >Taxation</p></div>
-            </Link>
-            <Link to="/our-capabilities/Estate-Planning">
-              <div className="icon">$</div>
-              <div className="txt">
-                <p className="link-txt" >Financial</p>
-                <p className="link-txt" >Planning</p>
-              </div>
-            </Link>
-            <Link to="/our-capabilities/Wealth-Management">
-              <div className="icon">&#38;</div>
-              <p className="link-txt" >Wealth</p>
-              <p className="link-txt" >Management</p>
-              <div className="txt"></div>
-            </Link>
-            <Link to="/our-capabilities/Loan">
-              <div className="icon">8</div>
-              <div className="txt">
-                <p className="link-txt" >Loan</p>
-              </div>
-            </Link>
-            <Link to="/our-capabilities/Insurance">
-              <div className="icon">D</div>
-              <div className="txt">
-                <p className="link-txt" >Insurance</p>
-              </div>
-            </Link>
+      <div className="capabilites-main-inner">
+        <div className="div-sidebar">
+          <Sidebar flag={flag} heading="Capabilities" list={list}/>
+        </div>
+        <div className="capabilities-content">
+          <div id="upper-capabilities-div">
+            <div id="inner-div">
+              <nav className="navbar navbar-expand-lg navbar-light bg-light toggle-btn">
+                <div className="container-fluid">
+                  <button
+                    type="button"
+                    id="sidebarCollapse"
+                    className="btn btn-info bg-light "
+                    onClick={() => {
+                      setflag(!flag);
+                    }}
+                  >
+                    <BsLayoutSidebarInset size={25} />
+                    {/* <span>Toggle Sidebar</span> */}
+                  </button>
+                </div>
+              </nav>
+            </div>
+            <img src={capabilities} id="capabilities-img" alt=""></img>
+            <div id="capabilities-heading">Our Capabilities</div>
           </div>
-
-          <div id="sub-capabilities">
-            <Routes>
-              <Route path="/" exact element={<FinancialPlanning />} />
-              <Route path="/Loan" exact element={<Loan />} />
-              <Route path="/Insurance" exact element={<Insurance />} />
-              <Route
-                path="/Estate-Planning"
-                exact
-                element={<EstatePlanning />}
-              />
-              <Route path="/Taxation" exact element={<Taxation />} />
-              <Route
-                path="/Wealth-Management"
-                exact
-                element={<WealthManagement />}
-              />
-            </Routes>
+          <div id="capabilities-routes">
+            {/* <div id="capabilities-routes-content"> */}
+            <FinancialPlanning />
+            <Taxation />
+            <WealthManagement />
+            <Loan />
+            <Insurance />
+            <EstatePlanning/>
+            {/* </div> */}
           </div>
         </div>
       </div>

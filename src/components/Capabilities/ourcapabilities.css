@@ -1,8 +1,9 @@
-.capabilities-main{
+.capabilities-main {
   width: 100vw;
 }
 #upper-capabilities-div {
-  width: 100vw;
+  width: 100%;
+  /* position: absolute; */
   height: fit-content;
   text-align: center;
   position: relative;
@@ -27,7 +28,7 @@
   height: 100%;
   opacity: 0.7;
 }
-.slider-parent{
+.slider-parent {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +52,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height:fit-content;
+  height: fit-content;
 }
 
 hr {
@@ -71,8 +72,8 @@ hr {
   /* font-size: 18px; */
 }
 
-.secondary-div-content{
-    padding-top: 7%;
+.secondary-div-content {
+  padding-top: 7%;
 }
 .secondary-div-content p {
   padding: 0.5% 0%;
@@ -96,7 +97,7 @@ hr {
 }
 
 .link-txt {
-  font-size:1.1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -121,24 +122,23 @@ hr {
 .slider-links > a:focus {
   color: #f7ac1d;
 }
-@media only screen and (max-width: 1100px){
-#capabilities-heading{
-font-size: 3rem;
-}
-
+@media only screen and (max-width: 1100px) {
+  #capabilities-heading {
+    font-size: 3rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .capabilities-main {
     padding-top: 0%;
   }
-  #capabilities-heading{
+  #capabilities-heading {
     font-size: 1.5rem;
   }
   .slider {
     flex-direction: row;
     padding-left: 0%;
     padding-right: 0%;
-    width:100%
+    width: 100%;
   }
 
   .slider-links {
@@ -154,7 +154,7 @@ font-size: 3rem;
   }
 
   #sub-capabilities {
-    padding:0% 5%;
+    padding: 0% 5%;
   }
 
   .link-txt {
@@ -181,4 +181,20 @@ font-size: 3rem;
     border-top: 2px solid;
     border-radius: 2px;
   }
+}
+
+/* ---------new changes---------- */
+
+.capabilites-main-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.div-sidebar {
+  height: 100vh;
+  /* position: fixed; */
+}
+.capabilities-content {
+  height: 100vh;
+  overflow: scroll;
 }

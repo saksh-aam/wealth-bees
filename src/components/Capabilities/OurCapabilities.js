@@ -7,64 +7,64 @@ import "./ourcapabilities.css";
 import Taxation from "./Taxation";
 import WealthManagement from "./WealthManagement";
 import capabilities from "../../images/capabilities.png";
-import { BsLayoutSidebarInset } from "react-icons/bs";
-import Sidebar from "../Sidebar/Sidebar";
 const OurCapabilities = () => {
-  const [flag, setflag] = useState(false);
-  const list = [
-    "#Financial-Planning",
-    "#Taxation",
-    "#Wealth-Management",
-    "#Loan", "#Insurance", "#Estate-Planning",
-  ];
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
-      });
-    });
-  });
+  const [item, setItem] = useState("fp");
   return (
     <div className="capabilities-main">
-      <div className="capabilites-main-inner">
-        <div className="div-sidebar">
-          <Sidebar flag={flag} heading="Capabilities" list={list} />
-        </div>
-        <div className="capabilities-content">
-          <div id="upper-capabilities-div">
-            <div id="inner-div">
-              <nav className="navbar navbar-expand-lg navbar-light bg-light toggle-btn">
-                <div className="container-fluid">
-                  <button
-                    type="button"
-                    id="sidebarCollapse"
-                    className="btn btn-info bg-light "
-                    onClick={() => {
-                      setflag(!flag);
-                    }}
-                  >
-                    <BsLayoutSidebarInset size={25} />
-                    {/* <span>Toggle Sidebar</span> */}
-                  </button>
-                </div>
-              </nav>
+      <div id="upper-capabilities-div">
+        {/* <div id="inner-div"> */}
+        <img src={capabilities} id="capabilities-img" alt=""></img>
+        <div id="capabilities-heading">Our Capabilities</div>
+        {/* </div> */}
+      </div>
+      <div className="slider-parent">
+        <div className="slider">
+          <div className="slider-links">
+            <div className="clickable" onClick={()=>setItem("fp")} style={{color:item==="fp"?"#f7ac1d":"#6c6c6c"}}>
+              <div className="icon">A</div>
+              <div className="txt">
+                <p className="link-txt" >Financial</p>
+                <p className="link-txt" > Planning</p>
+              </div>
             </div>
-            <img src={capabilities} id="capabilities-img" alt=""></img>
-            <div id="capabilities-heading">Our Capabilities</div>
+            <div className="clickable" onClick={()=>setItem("tx")} style={{color:item==="tx"?"#f7ac1d":"#6c6c6c"}}>
+              <div className="icon">Y</div>
+              <div className="txt"><p className="link-txt" >Taxation</p></div>
+            </div>
+            <div className="clickable" onClick={()=>setItem("ep")} style={{color:item==="ep"?"#f7ac1d":"#6c6c6c"}}>
+              <div className="icon">$</div>
+              <div className="txt">
+                <p className="link-txt" >Estate</p>
+                <p className="link-txt" >Planning</p>
+              </div>
+            </div>
+            <div className="clickable" onClick={()=>setItem("wm")} style={{color:item==="wm"?"#f7ac1d":"#6c6c6c"}}>
+              <div className="icon">&#38;</div>
+              <p className="link-txt" >Wealth</p>
+              <p className="link-txt" >Management</p>
+              <div className="txt"></div>
+            </div>
+            <div className="clickable" onClick={()=>setItem("lo")} style={{color:item==="lo"?"#f7ac1d":"#6c6c6c"}}>
+              <div className="icon">8</div>
+              <div className="txt">
+                <p className="link-txt" >Loan</p>
+              </div>
+            </div>
+            <div className="clickable" onClick={()=>setItem("in")} style={{color:item==="in"?"#f7ac1d":"#6c6c6c"}}>
+              <div className="icon">D</div>
+              <div className="txt">
+                <p className="link-txt" >Insurance</p>
+              </div>
+            </div>
           </div>
-          <div id="capabilities-routes">
-            <div id="bg-image-1">
-              <FinancialPlanning />
-            </div>
-            <div id="bg-image-2">
-              <Taxation />
-            </div>
 
-            <WealthManagement />
-            <Loan />
-            <Insurance />
-            <EstatePlanning />
+          <div id="sub-capabilities">
+            {item==="fp"?<FinancialPlanning/>:<></>}
+            {item==="ep"?<EstatePlanning/>:<></>}
+            {item==="wm"?<WealthManagement/>:<></>}
+            {item==="in"?<Insurance/>:<></>}
+            {item==="tx"?<Taxation/>:<></>}
+            {item==="lo"?<Loan/>:<></>}
           </div>
         </div>
       </div>

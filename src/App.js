@@ -7,7 +7,6 @@ import OurCapabilities from "./components/Capabilities/OurCapabilities";
 import InvestorsOverview from "./components/Investor/InvestorsOverview";
 import Homepage from "./components/Homepage/Homepage";
 import People from "./components/People/People";
-import { useEffect } from "react";
 
 function App() {
   return (

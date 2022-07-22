@@ -1,5 +1,7 @@
 .capabilities-main {
   width: 100vw;
+  height:100vh;
+  overflow-y: hidden;
 }
 #upper-capabilities-div {
   width: 100%;
@@ -52,7 +54,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0% 10%;
   height: fit-content;
+  background-color: white;
 }
 
 hr {
@@ -190,11 +194,27 @@ hr {
   flex-direction: row;
   align-items: center;
 }
-.div-sidebar {
-  height: 100vh;
-  /* position: fixed; */
-}
 .capabilities-content {
-  height: 100vh;
+  height: 105vh;
   overflow: scroll;
+}
+#bg-image-1{
+  background-image: url("../../images/people.png");
+  min-height: fit-content;
+  padding: 0% 0% 20% 0%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bg-image-2{
+  background-image: url("../../images/capabilities.png");
+  min-height: fit-content;
+  padding: 0% 0% 20% 0%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

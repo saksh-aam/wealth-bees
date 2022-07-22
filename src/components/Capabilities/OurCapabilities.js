@@ -17,11 +17,19 @@ const OurCapabilities = () => {
     "#Wealth-Management",
     "#Loan", "#Insurance", "#Estate-Planning",
   ];
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
   return (
     <div className="capabilities-main">
       <div className="capabilites-main-inner">
         <div className="div-sidebar">
-          <Sidebar flag={flag} heading="Capabilities" list={list}/>
+          <Sidebar flag={flag} heading="Capabilities" list={list} />
         </div>
         <div className="capabilities-content">
           <div id="upper-capabilities-div">
@@ -46,14 +54,17 @@ const OurCapabilities = () => {
             <div id="capabilities-heading">Our Capabilities</div>
           </div>
           <div id="capabilities-routes">
-            {/* <div id="capabilities-routes-content"> */}
-            <FinancialPlanning />
-            <Taxation />
+            <div id="bg-image-1">
+              <FinancialPlanning />
+            </div>
+            <div id="bg-image-2">
+              <Taxation />
+            </div>
+
             <WealthManagement />
             <Loan />
             <Insurance />
-            <EstatePlanning/>
-            {/* </div> */}
+            <EstatePlanning />
           </div>
         </div>
       </div>

@@ -6,18 +6,13 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // shadow-md
-    <div
-      className=" w-full z-10 drop-shadow-2xl transition-all duration-200 "   
-      id="main-navbar"
-    >
-      {/* <div id="background-helper"></div> */}
+    <div className=" w-full z-50 shadow-xl" id="main-navbar">
       <nav className="">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between ">
             <div className="w-full flex items-center justify-between">
               <div className="flex flex-row items-center">
-                <div className="py-1">
+                <div className="">
                   <Link to="/" className="navbar-brand">
                     <svg
                       width="150"
@@ -170,7 +165,7 @@ function NavBar() {
         >
           {() => (
             <div
-              className="md:hidden backdrop-blur bg-cyan-400 bg-opacity-20 absolute z-10 w-full"
+              className="md:hidden backdrop-blur bg-cyan-400 bg-opacity-20 absolute z-50 w-full"
               id="mobile-menu"
             >
               <div className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">

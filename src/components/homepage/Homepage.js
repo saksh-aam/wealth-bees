@@ -21,7 +21,7 @@ const Homepage = () => {
             id="Unnamed"
             fill="none"
             stroke="black"
-            stroke-width="1"
+            strokeWidth="1"
             d="M 58.00,484.00
            C 58.00,484.00 71.00,472.00 89.00,466.00
              107.00,460.00 207.00,389.00 373.00,453.00
@@ -262,9 +262,9 @@ const Homepage = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M15 19l-7-7 7-7"
                       ></path>
                     </svg>
@@ -285,9 +285,9 @@ const Homepage = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M9 5l7 7-7 7"
                       ></path>
                     </svg>

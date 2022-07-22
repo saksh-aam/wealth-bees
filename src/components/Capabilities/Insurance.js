@@ -2,7 +2,7 @@ import React from "react";
 import "./ourcapabilities.css";
 const Insurance = () => {
   return (
-    <div className="secondary-div">
+    <div className="secondary-div" id="Insurance">
       <div className="secondary-div-heading">
         Compare the various insurance policies available and choose what suits
         you best.

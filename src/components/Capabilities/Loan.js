@@ -2,7 +2,7 @@ import React from "react";
 import "./ourcapabilities.css";
 const Loan = () => {
   return (
-    <div className="secondary-div">
+    <div className="secondary-div" id="Loan">
       <div className="secondary-div-heading">
         We are with you through the entirety of your loan process – starting
         from calculations to origination, covenant tracking, collateral

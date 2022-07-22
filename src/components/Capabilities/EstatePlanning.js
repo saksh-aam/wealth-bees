@@ -2,7 +2,7 @@ import React from "react";
 import "./ourcapabilities.css";
 const EstatePlanning = () => {
   return (
-    <div className="secondary-div">
+    <div className="secondary-div" id="Estate-Planning">
       <div className="secondary-div-heading">
         Think about your legacy and decide the future of your estate.
       </div>
@@ -13,7 +13,7 @@ const EstatePlanning = () => {
           heirlooms, personal accolades and other assets from one generation to
           the other. It is a prudent step towards ensuring the financial
           security of your loved ones and minimizing the legal hassle caused by
-          any unforeseen event.{" "}
+          any unforeseen event.
         </p>
 
         <p>

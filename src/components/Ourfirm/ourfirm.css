@@ -48,14 +48,12 @@
   z-index: 1;
 }
 
-#sidebar {
+/* #sidebar {
   min-width: 250px;
   max-width: 250px;
   background: #474747;
   color: #fff;
   transition: all 0.3s;
-  /* margin-top: 9vh; */
-  /* padding-top:30px; */
 }
 
 #sidebar.active {
@@ -79,7 +77,6 @@
 #sidebar ul li {
   padding: 10px;
   font-size: 1.1em;
-  /* display: block; */
 }
 .sidelink-val {
   text-align: left;
@@ -125,7 +122,7 @@
     visibility: visible;
     opacity: 1;
   }
-}
+} */
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -153,11 +150,13 @@
 }
 .toggle-btn {
   position: absolute;
-  top: 3%;
-  left: 1%;
+  top: 13%;
+  left: 0.5%;
   padding: 6px;
   padding-bottom: 0%;
   border-radius: 5px;
+  z-index: 10;
+  position: fixed;
 }
 #ourfirm-routes {
   /* padding:20px; */

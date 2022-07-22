@@ -2,7 +2,7 @@ import React from "react";
 import "./ourcapabilities.css";
 const Taxation = () => {
   return (
-    <div className="secondary-div">
+    <div className="secondary-div" id="Taxation">
       <div className="secondary-div-heading">
         We promptly offer information and unbiased guidance based on our
         expertise of the tax regime in India.

@@ -2,7 +2,7 @@ import React from "react";
 import "./ourcapabilities.css";
 const WealthManagement = () => {
   return (
-    <div className="secondary-div">
+    <div className="secondary-div" id="Wealth-Management">
       <div className="secondary-div-heading">
         Let our innovation and insight help you by creating customized solutions
         to your problems.

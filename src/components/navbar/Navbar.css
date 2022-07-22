@@ -1,12 +1,12 @@
-.mainNavbar{
-    background-color: grey;
-    height:10vh;
-    width:100vw;
-    /* z-index: ; */
-    /* position: relative; */
-    /* margin-top:0%; */
+#main-navbar{
+    position: fixed;
+    background-color: white;
 }
-
+#background-helper{
+    width:100%;
+    height:100%;
+    background-color: white;
+}
 .navbar-brand {
     font-family: heading;
     font-size: 25px !important;

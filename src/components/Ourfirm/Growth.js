@@ -2,7 +2,7 @@ import React from "react";
 
 const Growth = () => {
   return (
-    <div>
+    <div className="ourFirm-subparts">
       <h1 className="ourfirm-subheading">Growth</h1>
       <p className="ourfirm-sub-content-p">
         Our dedication and persistence in what we do is reflected not just in

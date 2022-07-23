@@ -2,7 +2,7 @@ import React from "react";
 
 const Vision = () => {
   return (
-    <div>
+    <div className="ourFirm-subparts">
       <h1 className="ourfirm-subheading">Vision</h1>
       <p className="ourfirm-sub-content-p">
         To be the most competent and reliable source of guidance for you and

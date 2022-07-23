@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;700&family=Open+Sans:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Ubuntu:wght@400;500;700&display=swap");
 .home-main {
   width: 100vw;
   height: auto;
@@ -17,29 +15,66 @@
   z-index: 5;
 }
 .sections {
-  overflow: hidden;
+  /* overflow-x: hidden; */
   width: 100vw;
   position: relative;
 }
 
 #section-1 {
+  background-image: url("../../images/coverpage.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 95vh;
   width: 100vw;
   position: relative;
 }
+.coverpage-img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.broad-heading {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
 
+  color: #ffffff;
+}
+.light-heading {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 5%;
+  color: #ffffff;
+}
 #section-2 {
   width: 100vw;
 }
 
 #section1-inner {
-  background-color: #f7ac1d;
-  position: relative;
-  height: 100vh;
+  background: linear-gradient(
+    293.01deg,
+    rgba(247, 186, 37, 0.9) 1.28%,
+    rgba(247, 186, 37, 0.747) 99.3%
+  );
+  z-index: 5;
+  position: absolute;
+  bottom: -10%;
+  left: 10%;
+  width: 550px;
+  height: 300px;
 }
 
 #home-main-heading {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   /* width: 90%; */
+  padding: 2% 5% 10%;
   height: 45vh;
   position: absolute;
   font-weight: 700;
@@ -60,8 +95,7 @@
   border: 1px black;
   text-shadow: #000 2px 2px 5px;
   font-size: 5rem;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 
   /* -webkit-font-smoothing: antialiased; */
   /* -webkit-text-stroke: 1px black;
@@ -70,7 +104,7 @@
 
 #second {
   font-weight: 700;
-  font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
   font-size: 5rem;
   text-shadow: #000 0px 0px 1px;
@@ -81,8 +115,7 @@
   color: white;
   font-size: 5rem;
   text-shadow: #000 0px 0px 5px;
-    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .subheading-home {
@@ -115,35 +148,23 @@
 }
 
 /* --- Section 3 --- */
+.section-3 {
+  width: 100vw;
+}
 .section3-inner {
-  overflow: hidden;
-  /* background-color: #1dbdf7; */
   display: flex;
   flex-direction: row;
-  /* margin-top: 10vh; */
-  padding: 5% 10%;
+  padding: 5% 15%;
 }
 
-.section23-image {
-  width: 50%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-}
 .section3-image {
-  width: 50%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
+  /* width: 50%; */
+  /* height: fit-content; */
+  /* display: flex;
+  justify-content: center; */
+  padding: 0% 5%;
 }
 
-#rupee {
-  color: #282828;
-  text-shadow: #282828 0px 12px 5px;
-  font-size: 60vh;
-  line-height: 80%;
-  /* opacity: 0.5; */
-}
 .section3-content {
   width: 100%;
   height: 100%;
@@ -153,10 +174,8 @@
   text-align: justify;
 }
 .section3-content-main {
-  width: 80%;
+  width: 90%;
   height: 100%;
-  padding-left:0%;
-  /* padding-right:8%; */
   font-size: 1.3rem;
 }
 
@@ -166,7 +185,58 @@
   padding: 5% 0 2.5% 0;
   color: rgba(174, 114, 0, 1);
 }
+#mid-section {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mid-section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 15%;
+}
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.element-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 
+.statistics {
+  padding-top: 8%;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+  color: #3f3f3f;
+}
+.caption {
+  padding-top: 8%;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  width: 60%;
+  height: 120px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #6c6c6c;
+}
 @media only screen and (max-width: 912px) {
   #rupee {
     position: absolute;
@@ -198,13 +268,11 @@
   height: fit-content;
   width: 100vw;
   padding: 5% 10%;
-
 }
 .section4-inner {
   height: 100%;
   display: flex;
   flex-direction: column;
-  
 }
 .div-top {
   display: flex;
@@ -236,7 +304,7 @@
 #content4-1 {
   position: absolute;
   padding: 10px;
-  bottom:-10%;
+  bottom: -10%;
   right: 10%;
   width: 50%;
   height: fit-content;
@@ -274,9 +342,10 @@
   padding-top: 0%;
 }
 #content4-2 {
-  text-align: left;font-size: 1.3rem;
+  text-align: left;
+  font-size: 1.3rem;
   text-align: justify;
-  z-index:2;
+  z-index: 2;
 }
 
 #box4-3 {
@@ -293,7 +362,7 @@
   background-color: #c1eaff;
   text-align: left;
   border-radius: 5px;
-  z-index:2;
+  z-index: 2;
 }
 #subheading4-3 {
   font-size: 16px;
@@ -343,59 +412,61 @@
   -webkit-transform: scale(0.75, 0.75); */
   /* position: absolute; */
   /* top: 0%; */
-  padding-bottom:10%;
+  padding-bottom: 10%;
 }
-#HT1{
+#HT1 {
   padding-top: 5%;
   padding-left: 5%;
 }
-#HT3{
+#HT3 {
   padding-left: 5%;
 }
 
-@media only screen and (max-width: 1012px) and (min-width:768px) {
+@media only screen and (max-width: 1012px) and (min-width: 768px) {
   #section-4 {
-  height: fit-content;
-  width: 100vw;
-  padding: 5%;
-  justify-content: space-between;
-}
-#box4-1, #box4-2, #box4-3, #box4-4{
-  width:90%;
-  display: flex;
-  flex-direction: column;
-}
-  .subheading4{
+    height: fit-content;
+    width: 100vw;
+    padding: 5%;
+    justify-content: space-between;
+  }
+  #box4-1,
+  #box4-2,
+  #box4-3,
+  #box4-4 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .subheading4 {
     font-size: 30px;
     /* padding-bottom: 8%; */
   }
   .div-top {
     flex-direction: column-reverse;
-    width:100%;
+    width: 100%;
     padding-bottom: 10%;
   }
-  #box4-1{
-height: 70vh;
-width: 60%;
+  #box4-1 {
+    height: 70vh;
+    width: 60%;
   }
-  #content4-1{
+  #content4-1 {
     /* position: relative; */
-    width:70%;
+    width: 70%;
     bottom: -10%;
     /* height: 100vh; */
   }
-  #box4-3{
-height: 70vh;
-width: 60%;
+  #box4-3 {
+    height: 70vh;
+    width: 60%;
   }
-  #content4-2{
+  #content4-2 {
     font-size: 1.1rem;
     text-align: justify;
   }
   .div-bottom {
     flex-direction: column;
-    width:100%;
-        padding-top: 10%;
-
+    width: 100%;
+    padding-top: 10%;
   }
 }

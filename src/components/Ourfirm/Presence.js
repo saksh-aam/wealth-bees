@@ -2,7 +2,7 @@ import React from "react";
 
 const Presence = () => {
   return (
-    <div>
+    <div className="ourFirm-subparts">
       <h1 className="ourfirm-subheading">Presence</h1>
       <p className="ourfirm-sub-content-p">
         In 2018, Wealthbees established a Center at Lucknow, the city of culture

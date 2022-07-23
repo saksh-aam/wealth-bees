@@ -7,7 +7,7 @@ function NavBar() {
 
   return (
     <div className=" w-full z-50 shadow-xl" id="main-navbar">
-      <nav className="">
+      <nav className="py-3">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between ">
             <div className="w-full flex items-center justify-between">

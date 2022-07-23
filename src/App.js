@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar/Navbar.js";
 import OurFirm from "./components/Ourfirm/OurFirm";
 import OurCapabilities from "./components/Capabilities/OurCapabilities";
-
+import Footer from "./components/Footer/Footer";
 import InvestorsOverview from "./components/Investor/InvestorsOverview";
 import Homepage from "./components/Homepage/Homepage";
 import People from "./components/People/People";
@@ -59,6 +59,7 @@ function App() {
             }
           />
         </Routes>
+          <Footer/>
       </Router>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const Impact = () => {
   return (
-    <div>
+    <div className="ourFirm-subparts">
       <h1 className="ourfirm-subheading">Impact on Society</h1>
       <p className="ourfirm-sub-content-p">
         Our participation in the financial sector gives us an opportunity to

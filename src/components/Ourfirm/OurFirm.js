@@ -6,9 +6,16 @@ import Vision from "./Vision";
 import Growth from "./Growth";
 import "./ourfirm.css";
 import Impact from "./Impact";
+import Sidebar from "../Sidebar/Sidebar";
 import { BsLayoutSidebarInset } from "react-icons/bs";
 const OurFirm = () => {
   const [flag, setflag] = useState(true);
+  const list = [
+    "Presence",
+    "Vision",
+    "Growth",
+    "Impact",
+  ];
   return (
     <div className="ourfirm-main">
       <div className="wrapper">
@@ -64,6 +71,9 @@ const OurFirm = () => {
         <div id="content">
           <div id="upper-ourfirm-div">
             <div id="inner-div">
+              {/* <div className="div-sidebar">
+                <Sidebar flag={flag} heading="Capabilities" list={list} />
+              </div> */}
               <nav className="navbar navbar-expand-lg navbar-light bg-light toggle-btn">
                 <div className="container-fluid">
                   <button
@@ -87,12 +97,18 @@ const OurFirm = () => {
             </div>
           </div>
           <div id="ourfirm-routes">
-            <div id="ourfirm-routes-content">
+            {/* <div id="ourfirm-routes-content"> */}
+              <div id="bg-image-1">
                 <Presence />
+              </div>
+              <div id="bg-image-2">
                 <Vision />
+              </div>
+              <div id="bg-image-3">
                 <Growth />
+              </div>
                 <Impact />
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>

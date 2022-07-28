@@ -83,6 +83,9 @@ hr {
 }
 
 .icon {
+  display: flex;
+    align-items: center;
+    justify-content: center;
   font-size: 10vh;
   font-weight: bolder;
   margin-bottom: 1rem;
@@ -94,10 +97,19 @@ hr {
   display: flex;
   justify-content: space-around;
 }
-
+.txt{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#6c6c6c;
+}
 .link-txt {
   font-size:1.1rem;
   font-weight: 600;
+  text-align: center;
+  color: #6c6c6c;
 }
 
 .slider-links > .clickable {
@@ -160,6 +172,7 @@ font-size: 3rem;
 
   .link-txt {
     font-size: 1rem;
+    text-align: center;
   }
   .secondary-div-heading {
     color: #f7ac1d;

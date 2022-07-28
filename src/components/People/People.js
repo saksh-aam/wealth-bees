@@ -21,11 +21,11 @@ const People = () => {
           <p className="people-heading-p">Our responsibility</p>
           {/* </div> */}
           <div id="icon">
-            <BsChevronDoubleDown />
+            <a href="#people-main-content"><BsChevronDoubleDown /></a>
           </div>
         </div>
       </div>
-      <div className="people-main-content">
+      <div className="people-main-content" id="people-main-content">
         <div className="people-details">
           <div className="w-fit">
             <div className="flex flex-wrap cards-envelope">
@@ -43,7 +43,7 @@ const People = () => {
                         he leads the strategy and research teams from the
                         forefront.
                       </span>
-                      <button
+                      {/* <button
                         style={{
                           display: !flag1 ? "block" : "none",
                           fontWeight: 700,
@@ -55,9 +55,9 @@ const People = () => {
                         }}
                       >
                         Know More
-                      </button>
+                      </button> */}
                       <span
-                        style={{ display: flag1 ? "inline-block" : "none" }}
+                        // style={{ display: flag1 ? "inline-block" : "none" }}
                       >
                         CSP has served as the wealth Manager at Axis bank and
                         Territory manager of Future Generali and Bajaj Allianz.
@@ -67,7 +67,7 @@ const People = () => {
                     </p>
                     <p
                       className="bio-p text-justify pb-5"
-                      style={{ display: flag1 ? "block" : "none" }}
+                      // style={{ display: flag1 ? "block" : "none" }}
                     >
                       With core beliefs of transparency, trust and ethics, he
                       has been a part of the industry for the last 18 years. CSP
@@ -78,14 +78,14 @@ const People = () => {
                       Insurance Institute of india and Level II candidate for
                       CFA charter.
                     </p>
-                    {/* <p
+                    <p
                       className="bio-p text-justify pb-5"
-                      style={{ display: flag1 ? "block" : "none" }}
+                      // style={{ display: flag1 ? "block" : "none" }}
                     >
                       Catch up with him over a cup of coffee and you won't say
                       goodbye without being a part of WealthBees!
-                    </p> */}
-                    <button
+                    </p>
+                    {/* <button
                       style={{
                         display: flag1 ? "block" : "none",
                         fontWeight: 700,
@@ -94,7 +94,7 @@ const People = () => {
                       onClick={() => setflag1(!flag1)}
                     >
                       Show Less
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ const People = () => {
                       Management Graduate with specialization in Finance and
                       Banking, MS Ramaiah college, Bengaluru. Certified from
                       NISM and IRDA.
-                      <button
+                      {/* <button
                         style={{
                           display: !flag2 ? "block" : "none",
                           fontWeight: 700,
@@ -123,18 +123,23 @@ const People = () => {
                         }}
                       >
                         Know More
-                      </button>
+                      </button> */}
                     </p>
                     <p
                       className="bio-p text-justify pb-5"
-                      style={{ display: flag2 ? "block" : "none" }}
+                      // style={{ display: flag2 ? "block" : "none" }}
                     >
-                      10+ years of experience in finance and banking industry.
+                      {/* 10+ years of experience in finance and banking industry.
                       Proven expertise and knowledhe in Derivative Market,
                       Capital Markets, Commodities Market, etc. Proficient with
-                      portfolio planning and management.
+                      portfolio planning and management. */}
+                       Ankur Sharma leads the Wealth Bees Team and spearheads all company growth initiatives. Ankur is a CFGP and Wealth Management domain specialist with over a decade of diversified experience in Financial Services and has been actively working on Corporate Training & Learning and Development. He has been associated with various Certification bodies and boards, including the National Institute of Securities Markets National Stock Exchange Academy. By educational qualification, Ankur is Post Graduate with a specialization in Finance & Banking from M S Ramaiah Institute of Management, Bangalore. 
                     </p>
-                    <button
+
+                    <p className="bio-p text-justify pb-5">
+                      Ankur is a Subject Matter Expert in the Personal Finance Domain and is engaged as a consultant by Asset Management Companies, Universities, and Business Schools; and contributes to various Financial Awareness & Inclusion programs across the country.
+                    </p>
+                    {/* <button
                       style={{
                         display: flag2 ? "block" : "none",
                         fontWeight: 700,
@@ -143,7 +148,7 @@ const People = () => {
                       onClick={() => setflag2(!flag2)}
                     >
                       Show Less
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
@@ -156,9 +161,8 @@ const People = () => {
                   <p className="text-grey-darker text-base mb-4 ">Co-Founder</p>
                   <div className="w-80 bio">
                     <p className="bio-p text-justify pb-5">
-                      Commerce Graduate, Lucknow university. Certified from NISM
-                      and IRDA.
-                      <button
+                      Abhishek is an effective communicator known for his excellent relationship and management skills.  
+                      {/* <button
                         style={{
                           display: !flag3 ? "block" : "none",
                           fontWeight: 700,
@@ -170,19 +174,22 @@ const People = () => {
                         }}
                       >
                         Know More
-                      </button>
+                      </button> */}
                     </p>
 
                     <p
                       className="bio-p text-justify pb-5"
-                      style={{ display: flag3 ? "block" : "none" }}
+                      // style={{ display: flag3 ? "block" : "none" }}
                     >
-                      15+ yeats of industry experience. He is a well-know Wealth
-                      Planner accredited by CIEL. He is well versed in
-                      Investment handling and Advisory services. Portfolio
-                      management and financial planning in his forte.
+                      After working for 18 years in the banking and finance industry, he came up with this idea to help society choose the right path towards achieving their financial goals; hence the WealthBees' journey started with Abhishek being one of the co-founders. He is highly proficient in portfolio management and financial planning as an expert in Investment handling and Advisory services. He has worked with various Multinational Giants like ABN Amro, HSBC, IndusInd Bank, and Axis Bank, which speaks a lot about his extensive experience in the Industry.
                     </p>
-                    <button
+
+                    <p className="bio-p text-justify pb-5">
+                      Customizing the financial journey for every individual client, the basis of the client's risk appetite, capacity to invest, and the time horizon are a few of the essential fundamentals that he considers while suggesting a product. He truly understands the different phases of wealth management accumulation, preservation, and distribution. Abhishek holds the degree of B. Com from Lucknow university and a Licentiate from IRDA and NISM.
+
+                      Having a financial planner like Abhishek is a step ahead in achieving your desired financial goal.
+                    </p>
+                    {/* <button
                       style={{
                         display: flag3 ? "block" : "none",
                         fontWeight: 700,
@@ -191,7 +198,7 @@ const People = () => {
                       onClick={() => setflag3(!flag3)}
                     >
                       Show Less
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

@@ -1,13 +1,14 @@
 import React from "react";
-import insight1 from "../../images/insights.png";
-import rupeeimage from "../../images/rupeeimage.webp";
 import HT1 from "../../images/HT1.png";
 import HT2 from "../../images/HT2.png";
 import HT3 from "../../images/HT3.png";
-import "./homepage.css";
 import Groupglobe from "../../images/Groupglobe.svg"
 import Groupbuilding from "../../images/Groupbuilding.svg"
 import Groupclock from "../../images/Groupclock.svg"
+import rupeedesktop from "../../images/rupeedesktop.svg"
+import rupeemobile from "../../images/rupeemobile.svg"
+import "./homepage.css";
+import HarnessTechCarousel from "./HarnessTechCarousel";
 
 const Homepage = () => {
   return (
@@ -155,30 +156,13 @@ const Homepage = () => {
       <div id="section-3" className="sections">
         <div className="section3-inner">
           <div className="section3-image" id="rupee">
-            {/* <img src={rupeeimage} alt="" /> */}
-            <svg width="320" height="500" viewBox="0 0 379 568" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_0_221)">
-                <path d="M0.382813 0.499971H98.6328C123.633 0.499971 146.383 5.49997 166.883 15.5C187.383 25.5 205.133 39 220.133 56C235.633 73 247.383 92 255.383 113C263.883 134 268.133 155.5 268.133 177.5C268.133 200 263.883 221.75 255.383 242.75C247.383 263.25 235.633 281.25 220.133 296.75C204.633 312.25 186.383 324.25 165.383 332.75L297.383 533H181.133L13.1328 270.5H96.3828C109.383 270.5 120.883 266.5 130.883 258.5C141.383 250 149.383 238.75 154.883 224.75C160.883 210.75 163.883 195 163.883 177.5C163.883 159.5 160.383 143.5 153.383 129.5C146.383 115.5 137.383 104.5 126.383 96.5C115.883 88.5 104.633 84.5 92.6328 84.5H0.382813V0.499971ZM343.133 175.25H0.382813V113.75H343.133V175.25ZM343.133 62.75H0.382813V0.499971H343.133V62.75Z" fill="#474747" />
-              </g>
-              <defs>
-                <filter id="filter0_d_0_221" x="0.382812" y="0.5" width="377.75" height="567.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dx="25" dy="25" />
-                  <feGaussianBlur stdDeviation="5" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.968627 0 0 0 0 0.67451 0 0 0 0 0.113725 0 0 0 0.1 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_221" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_221" result="shape" />
-                </filter>
-              </defs>
-            </svg>
+            <img src={rupeedesktop} alt="" className="rupeedesktop" />
+            <img src={rupeemobile} alt="" className="rupeemobile" />
+            
 
           </div>
           <div className="section3-content">
-            {/* <div> */}
             <h1 className="subheading3">WealthBees</h1>
-            {/* </div> */}
             <div className="section3-content-main">
               WealthBees is a leader in providing personalised financial
               services. Based out of Lucknow, it deals in personal investments
@@ -222,7 +206,8 @@ const Homepage = () => {
         <div className="section4-inner">
           <div className="div-top">
             <div id="box4-1" className="subdivsof4">
-              <img src={HT1} alt="" id="HT1" />
+              <div className="secion4-firstimage">
+              <img src={HT1} alt="" id="HT1" /></div>
               <div id="content4-1">
                 <h1 id="subheading4-1">
                   Online ATM. - Fast &amp; Secure WealthBees Mobile App
@@ -239,9 +224,9 @@ const Homepage = () => {
             <div id="box4-2" className="subdivsof4">
               <div id="content4-2">
                 <div>
-                  <h1 className="subheading4">Harnessing Technology</h1>
+                  <h1 className="subheading4-2 subheading4">Harnessing Technology</h1>
                 </div>
-                <div className="section4-content">
+                <div className="section4-content-2 section4-content">
                   Using Technology to take informed decisions, to maximise your
                   profits with a personalised touch. Wealthbees App provides you
                   with the comfort and security of bringing your portfolio in
@@ -254,7 +239,8 @@ const Homepage = () => {
 
           <div className="div-bottom">
             <div id="box4-3" className="subdivsof4">
-              <img src={HT3} alt="" id="HT3" />
+              <div className="secion4-secondimage">
+                <img src={HT2} alt="" id="HT2" /></div>
               <div id="content4-3">
                 <h1 id="subheading4-3">
                   Portfolio in your pocket. WealthBees Mobile App
@@ -269,7 +255,8 @@ const Homepage = () => {
             </div>
 
             <div id="box4-4" className="subdivsof4">
-              <img src={HT2} alt="" id="HT2" />
+              <div className="secion4-thirdimage">
+                <img src={HT3} alt="" id="HT3" /></div>
               <div id="content4-4">
                 <h1 id="subheading4-4">
                   Investing through Research &amp; Perfection.
@@ -283,6 +270,10 @@ const Homepage = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="HarnessTechCarousel">
+          <HarnessTechCarousel/>
         </div>
       </div>
     </div>

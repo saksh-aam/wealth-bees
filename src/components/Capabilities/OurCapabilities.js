@@ -7,6 +7,12 @@ import "./ourcapabilities.css";
 import Taxation from "./Taxation";
 import WealthManagement from "./WealthManagement";
 import capabilities from "../../images/capabilities.png";
+import capabilities1 from "../../images/Capabilities1.svg";
+import capabilities2 from "../../images/Capabilities2.svg";
+import capabilities3 from "../../images/Capabilities3.svg";
+import capabilities4 from "../../images/Capabilities4.svg";
+import capabilities5 from "../../images/Capabilities5.svg";
+import capabilities6 from "../../images/Capabilities6.svg";
 const OurCapabilities = () => {
   const [item, setItem] = useState("fp");
   return (
@@ -21,37 +27,38 @@ const OurCapabilities = () => {
         <div className="slider">
           <div className="slider-links">
             <div className="clickable" onClick={()=>setItem("fp")} style={{color:item==="fp"?"#f7ac1d":"#6c6c6c"}}>
-              <div className="icon">A</div>
+              <div className="icon"><img src={ capabilities1} alt=""/></div>
               <div className="txt">
                 <p className="link-txt" >Financial</p>
                 <p className="link-txt" > Planning</p>
               </div>
             </div>
             <div className="clickable" onClick={()=>setItem("tx")} style={{color:item==="tx"?"#f7ac1d":"#6c6c6c"}}>
-              <div className="icon">Y</div>
+              <div className="icon"><img src={capabilities2} alt="" /></div>
               <div className="txt"><p className="link-txt" >Taxation</p></div>
             </div>
             <div className="clickable" onClick={()=>setItem("ep")} style={{color:item==="ep"?"#f7ac1d":"#6c6c6c"}}>
-              <div className="icon">$</div>
+              <div className="icon"><img src={capabilities3} alt="" /></div>
               <div className="txt">
                 <p className="link-txt" >Estate</p>
                 <p className="link-txt" >Planning</p>
               </div>
             </div>
             <div className="clickable" onClick={()=>setItem("wm")} style={{color:item==="wm"?"#f7ac1d":"#6c6c6c"}}>
-              <div className="icon">&#38;</div>
+              <div className="icon"><img src={capabilities4} alt="" /></div>
+              <div className="txt">
               <p className="link-txt" >Wealth</p>
               <p className="link-txt" >Management</p>
-              <div className="txt"></div>
+              </div>
             </div>
             <div className="clickable" onClick={()=>setItem("lo")} style={{color:item==="lo"?"#f7ac1d":"#6c6c6c"}}>
-              <div className="icon">8</div>
+              <div className="icon"><img src={capabilities5} alt="" /></div>
               <div className="txt">
                 <p className="link-txt" >Loan</p>
               </div>
             </div>
             <div className="clickable" onClick={()=>setItem("in")} style={{color:item==="in"?"#f7ac1d":"#6c6c6c"}}>
-              <div className="icon">D</div>
+              <div className="icon"><img src={capabilities6} alt="" /></div>
               <div className="txt">
                 <p className="link-txt" >Insurance</p>
               </div>

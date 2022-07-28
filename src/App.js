@@ -1,11 +1,11 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./components/Navbar/Navbar";
+import NavBar from "./components/navbar/Navbar";
 import OurFirm from "./components/Ourfirm/OurFirm";
 import OurCapabilities from "./components/Capabilities/OurCapabilities";
 import Footer from "./components/Footer/Footer";
 import InvestorsOverview from "./components/Investor/InvestorsOverview";
-import Homepage from "./components/Homepage/Homepage";
+import Homepage from "./components/homepage/Homepage";
 import People from "./components/People/People";
 
 function App() {

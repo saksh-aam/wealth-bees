@@ -91,7 +91,7 @@ hr {
   margin-bottom: 1rem;
 }
 .slider {
-  padding: 2% 10%;
+  padding: 4% 10%;
 }
 .slider-links {
   display: flex;
@@ -171,7 +171,7 @@ font-size: 3rem;
   }
 
   #sub-capabilities {
-    padding:0% 7% 0 3%;
+    padding:1% 7% 0 3%;
   }
 
   .txt .link-txt {

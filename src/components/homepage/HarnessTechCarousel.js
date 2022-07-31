@@ -54,10 +54,10 @@ export default function HarnessTechCarousel() {
             setSlideIndex(objects.length);
         }
     };
-    useEffect(() => {
-        const interval = setInterval(switchobjects, 8000);
-        return () => clearInterval(interval);
-    }, [slideIndex]);
+    // useEffect(() => {
+    //     const interval = setInterval(switchobjects, 8000);
+    //     return () => clearInterval(interval);
+    // }, [slideIndex]);
 
     return (
         <div className="container-slider">

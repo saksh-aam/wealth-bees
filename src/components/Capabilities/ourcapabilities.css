@@ -105,11 +105,12 @@ hr {
   justify-content: center;
   color:#6c6c6c;
 }
-.link-txt {
+.txt .link-txt {
   font-size:1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   color: #6c6c6c;
+  padding: 0;
 }
 
 .slider-links > .clickable {
@@ -144,6 +145,9 @@ font-size: 3rem;
   .capabilities-main {
     padding-top: 0%;
   }
+  /* #upper-capabilities-div {
+    height: 150px;
+  } */
   #capabilities-heading{
     font-size: 1.5rem;
   }
@@ -167,10 +171,10 @@ font-size: 3rem;
   }
 
   #sub-capabilities {
-    padding:0% 5%;
+    padding:0% 7% 0 3%;
   }
 
-  .link-txt {
+  .txt .link-txt {
     font-size: 1rem;
     text-align: center;
   }

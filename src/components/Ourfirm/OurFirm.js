@@ -19,54 +19,54 @@ const OurFirm = () => {
   return (
     <div className="ourfirm-main">
       <div className="wrapper">
-        <nav id="sidebar" style={{ display: flag ? "block" : "none" }}>
-          <div className="sidebar-header">
-            <h1 id="sidebar-heading">Our Firm</h1>
+        <div id="sidebar" style={{ width: flag ? "0" : "250px", opacity: flag ? "0" : "1" }}>
+          <div className="sidebar-header" style={{ width: flag ? "0" : "250px", opacity: flag ? "0" : "1" }}>
+            Our Firm
           </div>
 
-          <ul className="list-unstyled components">
+          <ul className="list-unstyled components" style={{ width: flag ? "0" : "250px", opacity: flag ? "0" : "1" }}>
             <li>
-              <div className="side-links">
+              <div className="side-links" style={{ width: flag ? "0" : "250px", opacity: flag ? "0" : "1" }}>
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/our-firm/" className="sidelink-val">
+                <a href="#Presence" className="sidelink-val">
                   Presence
-                </Link>
+                </a>
               </div>
             </li>
             <li>
-              <div className="side-links">
+              <div className="side-links" style={{ width: flag ? "0" : "250px", opacity: flag ? "0" : "1" }}>
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/our-firm/Vision" className="sidelink-val">
+                <a href="#Vision" className="sidelink-val">
                   Vision
-                </Link>
+                </a>
               </div>
             </li>
             <li>
-              <div className="side-links">
+              <div className="side-links" style={{ width: flag ? "0" : "250px", opacity: flag ? "0" : "1" }}>
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/our-firm/Growth" className="sidelink-val">
+                <Link to="#Growth" className="sidelink-val">
                   Growth
                 </Link>
               </div>
             </li>
             <li>
-              <div className="side-links">
+              <div className="side-links" style={{ width: flag ? "0" : "250px", opacity: flag ? "0" : "1" }}>
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="/our-firm/Impact" className="sidelink-val">
+                <Link to="#Impact" className="sidelink-val">
                   Impact on Society
                 </Link>
               </div>
             </li>
           </ul>
-        </nav>
+        </div>
 
         <div id="content">
           <div id="upper-ourfirm-div">
@@ -98,17 +98,18 @@ const OurFirm = () => {
           </div>
           <div id="ourfirm-routes">
             {/* <div id="ourfirm-routes-content"> */}
-              <div id="bg-image-1">
+            <div id="Presence">
                 <Presence />
               </div>
-              <div id="bg-image-2">
+            <div id="Vision">
                 <Vision />
               </div>
-              <div id="bg-image-3">
+            <div id="Growth">
                 <Growth />
               </div>
+            <div id="Impact">
                 <Impact />
-            {/* </div> */}
+              </div>
           </div>
         </div>
       </div>

@@ -40,92 +40,17 @@
 
 .ourfirm-main {
   z-index: 1;
+  padding-top: 84px;
 }
 .wrapper {
   display: flex;
   width: 100%;
   align-items: stretch;
   z-index: 1;
+  position: relative;
 }
 
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  background: #474747;
-  color: #fff;
-  transition: all 0.3s;
-  /* margin-top: 9vh; */
-  /* padding-top:30px; */
-}
 
-#sidebar.active {
-  margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: #474747;
-}
-
-#sidebar ul.components {
-  padding: 20px 0;
-}
-
-#sidebar-heading {
-  font-size: 1.7em;
-  font-weight: 700;
-}
-
-#sidebar ul li {
-  padding: 10px;
-  font-size: 1.1em;
-  /* display: block; */
-}
-.sidelink-val {
-  text-align: left;
-}
-.side-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 10px;
-}
-
-.side-links:hover .arrow {
-  animation: moveWithVisibility 1s;
-}
-.side-links .arrow {
-  visibility: visible;
-}
-.side-links:hover .sidelink-val {
-  animation: move 1s;
-}
-.arrow {
-  visibility: hidden;
-  opacity: 0;
-}
-@keyframes move {
-  from {
-    transform: translateX(0px);
-  }
-
-  to {
-    transform: translateX(20px);
-  }
-}
-@keyframes moveWithVisibility {
-  from {
-    transform: translateX(0px);
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(20px);
-    visibility: visible;
-    opacity: 1;
-  }
-}
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -134,7 +59,7 @@
 #content {
   min-width: auto;
   /* padding: 20px; */
-  height: 91.5vh;
+  height: 100vh;
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,12 +83,13 @@
   color: white;
 }
 .toggle-btn {
-  position: absolute;
-  top: 3%;
+  position: fixed;
+  top: 104px;
   left: 1%;
   padding: 6px;
   padding-bottom: 0%;
   border-radius: 5px;
+  z-index: 15;
 }
 #ourfirm-routes {
   /* padding:20px; */
@@ -174,6 +100,7 @@
   padding-bottom: 0%;
 }
 .ourfirm-sub-content-p {
+  width: 65%;
   font-size: 20px;
   text-align: justify;
   padding-bottom: 2%;
@@ -183,30 +110,30 @@
   font-weight: 500;
   padding-bottom: 2.5%;
 }
-#bg-image-1{
-  background-image: url("../../images/people.png");
+#Presence{
+  background-image: url("../../images/ourfirm1.webp");
   min-height: fit-content;
-  padding: 0% 0% 20% 0%;
+  padding: 0% 0% 25% 0%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#bg-image-2{
-  background-image: url("../../images/capabilities.png");
+#Vision{
+  background-image: url("../../images/ourfirm2.webp");
   min-height: fit-content;
-  padding: 0% 0% 20% 0%;
+  padding: 0% 0% 25% 0%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#bg-image-3{
-  background-image: url("../../images/capabilities.png");
+#Growth{
+  background-image: url("../../images/ourfirm3.webp");
   min-height: fit-content;
-  padding: 0% 0% 20% 0%;
+  padding: 0% 0% 25% 0%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -219,21 +146,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5% 0 4%;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-  #sidebar {
-    max-width: 175px;
-    min-width: 175px;
-  }
-
-  #sidebarCollapse span {
-    display: block;
-  }
-
   .toggle-btn {
     left: 5%;
   }
@@ -246,14 +165,25 @@
   }
 
   .ourfirm-sub-content-p {
+    width: 70%;
     font-size: 16px;
     text-align: justify;
-    padding-bottom: 2%;
+    /* padding: 15%; */
+    padding-bottom: 3%;
   }
 
   .ourfirm-subheading {
     font-size: 2rem;
     font-weight: 500;
     padding-bottom: 5%;
+  }
+  #Presence{
+    padding: 0 0 50% 0;
+  }
+  #Growth{
+    padding: 0 0 50% 0;
+  }
+  #Vision{
+    padding: 0 0 50% 0;
   }
 }

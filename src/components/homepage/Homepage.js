@@ -185,20 +185,22 @@ const Homepage = () => {
             <p className="statistics">30+</p>
             <p className="caption">months of dedicated work</p>
           </div>
-          <div className="element">
-            <div className="element-image">
-              <img src={Groupbuilding} alt=""  style={{height:"222px"}}/>
-
-            </div>
-            <p className="statistics">100+</p>
-            <p className="caption">crores of funds being managed</p>
-          </div>
+          
           <div className="element">
             <div className="element-image">
               <img src={Groupglobe} alt="" style={{height:"222px"}}/>
             </div>
             <p className="statistics">5+</p>
             <p className="caption">counries are being serviced by us</p>
+          </div>
+
+          <div className="element">
+            <div className="element-image">
+              <img src={Groupbuilding} alt="" style={{ height: "222px" }} />
+
+            </div>
+            <p className="statistics">100+</p>
+            <p className="caption">crores of funds being managed</p>
           </div>
         </div>
       </div>

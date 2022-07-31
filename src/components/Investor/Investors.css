@@ -1,0 +1,118 @@
+.investor-overview-main {
+  height: fit-content;
+  width: 100vw;
+  padding-top: 84px;
+}
+.investors-main-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5% 0;
+}
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-details-text {
+  width: fit-content;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.login-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* width: 100%; */
+  /* height: fit-content; */
+}
+.login-cards {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  flex-direction: column;
+  width: 450px;
+  min-height: 350px;
+  margin: 5%;
+  padding: 5% 3%;
+  position: relative;
+  background: linear-gradient(
+    293.01deg,
+    #f7ba25 1.28%,
+    rgba(247, 186, 37, 0.83) 99.3%
+  );
+}
+.user-type {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 20px 0;
+  color: #ffffff;
+  text-align: left;
+}
+.user-type-details {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: left;
+  padding-top: 20px;
+  height: fit-content;
+  /* padding-right: 20px; */
+  color: #ffffff;
+}
+.login-details-line {
+  width: 70%;
+  color: #ffffff;
+  border-top: 2px solid;
+}
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+}
+.user-action {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 900px) {
+  .login-cards-container {
+    flex-direction: column;
+    padding-top: 5%;
+  }
+  .login-cards {
+    width: 300px;
+    min-height: 300px;
+    padding: 5%;
+  }
+  .arrow-container {
+    position: static;
+    padding-top: 50px;
+    /* bottom: 30px;
+    right: 20px; */
+  }
+}

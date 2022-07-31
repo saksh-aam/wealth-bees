@@ -26,7 +26,7 @@ function App() {
           <Route
             path="/our-firm/"
             element={
-              <div className="pt-12 w-fit sm:w-full">
+              <div className="w-fit sm:w-full">
                 <OurFirm />
               </div>
             }
@@ -41,10 +41,10 @@ function App() {
             }
           />
           <Route
-            path="/investor-overview"
+            path="/investors"
             exact
             element={
-              <div className="pt-12 w-fit sm:w-full">
+              <div className="w-fit sm:w-full">
                 <InvestorsOverview />
               </div>
             }

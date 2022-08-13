@@ -57,7 +57,7 @@ const People = () => {
                         Know More
                       </button> */}
                       <span
-                        // style={{ display: flag1 ? "inline-block" : "none" }}
+                      // style={{ display: flag1 ? "inline-block" : "none" }}
                       >
                         CSP has served as the wealth Manager at Axis bank and
                         Territory manager of Future Generali and Bajaj Allianz.
@@ -67,7 +67,7 @@ const People = () => {
                     </p>
                     <p
                       className="bio-p text-justify pb-5"
-                      // style={{ display: flag1 ? "block" : "none" }}
+                    // style={{ display: flag1 ? "block" : "none" }}
                     >
                       With core beliefs of transparency, trust and ethics, he
                       has been a part of the industry for the last 18 years. CSP
@@ -80,7 +80,7 @@ const People = () => {
                     </p>
                     <p
                       className="bio-p text-justify pb-5"
-                      // style={{ display: flag1 ? "block" : "none" }}
+                    // style={{ display: flag1 ? "block" : "none" }}
                     >
                       Catch up with him over a cup of coffee and you won't say
                       goodbye without being a part of WealthBees!
@@ -127,13 +127,13 @@ const People = () => {
                     </p>
                     <p
                       className="bio-p text-justify pb-5"
-                      // style={{ display: flag2 ? "block" : "none" }}
+                    // style={{ display: flag2 ? "block" : "none" }}
                     >
                       {/* 10+ years of experience in finance and banking industry.
                       Proven expertise and knowledhe in Derivative Market,
                       Capital Markets, Commodities Market, etc. Proficient with
                       portfolio planning and management. */}
-                       Ankur Sharma leads the Wealth Bees Team and spearheads all company growth initiatives. Ankur is a CFGP and Wealth Management domain specialist with over a decade of diversified experience in Financial Services and has been actively working on Corporate Training & Learning and Development. He has been associated with various Certification bodies and boards, including the National Institute of Securities Markets National Stock Exchange Academy. By educational qualification, Ankur is Post Graduate with a specialization in Finance & Banking from M S Ramaiah Institute of Management, Bangalore. 
+                      Ankur Sharma leads the Wealth Bees Team and spearheads all company growth initiatives. Ankur is a CFGP and Wealth Management domain specialist with over a decade of diversified experience in Financial Services and has been actively working on Corporate Training & Learning and Development. He has been associated with various Certification bodies and boards, including the National Institute of Securities Markets National Stock Exchange Academy. By educational qualification, Ankur is Post Graduate with a specialization in Finance & Banking from M S Ramaiah Institute of Management, Bangalore.
                     </p>
 
                     <p className="bio-p text-justify pb-5">
@@ -161,7 +161,7 @@ const People = () => {
                   <p className="text-grey-darker text-base mb-4 ">Co-Founder</p>
                   <div className="w-80 bio">
                     <p className="bio-p text-justify pb-5">
-                      Abhishek is an effective communicator known for his excellent relationship and management skills.  
+                      Abhishek is an effective communicator known for his excellent relationship and management skills.
                       {/* <button
                         style={{
                           display: !flag3 ? "block" : "none",
@@ -179,7 +179,7 @@ const People = () => {
 
                     <p
                       className="bio-p text-justify pb-5"
-                      // style={{ display: flag3 ? "block" : "none" }}
+                    // style={{ display: flag3 ? "block" : "none" }}
                     >
                       After working for 18 years in the banking and finance industry, he came up with this idea to help society choose the right path towards achieving their financial goals; hence the WealthBees' journey started with Abhishek being one of the co-founders. He is highly proficient in portfolio management and financial planning as an expert in Investment handling and Advisory services. He has worked with various Multinational Giants like ABN Amro, HSBC, IndusInd Bank, and Axis Bank, which speaks a lot about his extensive experience in the Industry.
                     </p>

@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import InvestorsOverview from "./components/Investor/InvestorsOverview";
 import Homepage from "./components/homepage/Homepage";
 import People from "./components/People/People";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -53,8 +54,17 @@ function App() {
             path="/people"
             exact
             element={
-              <div className="pt-12 w-fit sm:w-full">
+              <div className="w-fit sm:w-full">
                 <People />
+              </div>
+            }
+          />
+          <Route
+            path="/contact-us"
+            exact
+            element={
+              <div className="w-fit sm:w-full">
+                <ContactUs />
               </div>
             }
           />

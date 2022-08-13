@@ -1,8 +1,10 @@
 .capabilities-main{
   width: 100vw;
+  height: fit-content;
 }
 #upper-capabilities-div {
   width: 100vw;
+  padding-top: 84px;
   height: fit-content;
   text-align: center;
   position: relative;

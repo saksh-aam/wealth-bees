@@ -35,10 +35,16 @@ function NavBar() {
                     </Link>
 
                     <Link
-                      to="/investor"
+                      to="/investors"
                       className="nav-link nav-link-ltr "
                     >
                       Investors
+                    </Link>
+                    <Link
+                      to="/contact-us"
+                      className="nav-link nav-link-ltr "
+                    >
+                      Contact US
                     </Link>
                   </div>
                 </div>
@@ -144,6 +150,12 @@ function NavBar() {
                   className="font-Montserrat font-bold   hover: block px-3 py-2 rounded-md text-base "
                 >
                   Investors
+                </Link>
+                <Link
+                  to="/contact-us"
+                  className="font-Montserrat font-bold   hover: block px-3 py-2 rounded-md text-base "
+                >
+                  Contact Us 
                 </Link>
               </div>
             </div>

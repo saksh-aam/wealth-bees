@@ -50,9 +50,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="#Growth" className="sidelink-val">
+                <a href="#Growth" className="sidelink-val">
                   Growth
-                </Link>
+                </a>
               </div>
             </li>
             <li>
@@ -60,9 +60,9 @@ const OurFirm = () => {
                 <div className="arrow">
                   <GoTriangleRight />
                 </div>
-                <Link to="#Impact" className="sidelink-val">
+                <a href="#Impact" className="sidelink-val">
                   Impact on Society
-                </Link>
+                </a>
               </div>
             </li>
           </ul>
